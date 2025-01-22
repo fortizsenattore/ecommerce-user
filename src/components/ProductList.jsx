@@ -150,7 +150,7 @@ function ProductList() {
         <div className="pb-5 background-night color-text-our-white saira">
           <div className="container overflow-hidden">
             <div className="row gx-4 gy-5">
-              {brand.map((car) => (
+              {brand?.map((car) => (
                 <div key={car.id} className="col-lg-6 text-center">
                   <div className="overflow-hidden shadow">
                     <Link to={`/product/${car.id}`}>

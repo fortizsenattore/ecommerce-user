@@ -10,7 +10,7 @@ import { getAllProducts } from "../../redux/productSlice.js";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
-import ModalResetDB from "./ModalResetDb.jsx"
+import ModalResetDB from "./ModalResetDb.jsx";
 
 function Home() {
   const dispatch = useDispatch();
@@ -26,9 +26,9 @@ function Home() {
     getProducts();
   }, []);
 
-  const disableFunction = ()=>{
-    toast.info("This feature is in development.")
-  }
+  const disableFunction = () => {
+    toast.info("This feature is in development.");
+  };
 
   return (
     <>
@@ -157,7 +157,10 @@ function Home() {
                   passion, precision, and elegance of our brand. Driven by sophistication.
                 </p>
                 <div className=" d-flex justify-content-start w-100">
-                  <button onClick={disableFunction} className="button-purchase-product px-4 py-1 mt-0 mb-4 mb-md-0 fw-medium">
+                  <button
+                    onClick={disableFunction}
+                    className="button-purchase-product px-4 py-1 mt-0 mb-4 mb-md-0 fw-medium"
+                  >
                     Learn more
                   </button>
                 </div>
@@ -177,7 +180,10 @@ function Home() {
                   creating moments of distinction in the world of luxury automotive retail.
                 </p>
                 <div className=" d-flex justify-content-start w-100">
-                  <button onClick={disableFunction} className="button-purchase-product px-4 py-1 my-0 fw-medium">
+                  <button
+                    onClick={disableFunction}
+                    className="button-purchase-product px-4 py-1 my-0 fw-medium"
+                  >
                     Learn more
                   </button>
                 </div>
@@ -249,7 +255,7 @@ function Home() {
         </div>
       </div>
       {/* ModalResetDB */}
-      <ModalResetDB/>
+      <ModalResetDB />
     </>
   );
 }
